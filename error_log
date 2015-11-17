@@ -1,0 +1,18 @@
+[10-Nov-2015 13:24:38] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:24:38] PHP Parse error:  syntax error, unexpected T_STRING in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:24:41] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:24:41] PHP Parse error:  syntax error, unexpected T_STRING in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:25:59] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:25:59] PHP Parse error:  syntax error, unexpected T_STRING in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:27:08] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:27:08] PHP Parse error:  syntax error, unexpected T_STRING in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:27:18] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:27:18] PHP Parse error:  syntax error, unexpected T_STRING in /home3/scotlap5/public_html/index.php on line 52
+[10-Nov-2015 13:29:21] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/scotlap5/public_html/site/index.php on line 52
+[10-Nov-2015 13:29:21] PHP Parse error:  syntax error, unexpected T_STRING in /home3/scotlap5/public_html/site/index.php on line 52
+[10-Nov-2015 13:36:00] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/scotlap5/public_html/site/index.php on line 52
+[10-Nov-2015 13:36:00] PHP Parse error:  syntax error, unexpected T_STRING in /home3/scotlap5/public_html/site/index.php on line 52
+[10-Nov-2015 13:39:52] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/scotlap5/public_html/site/index.php on line 52
+[10-Nov-2015 13:39:52] PHP Parse error:  syntax error, unexpected T_STRING in /home3/scotlap5/public_html/site/index.php on line 52
+[10-Nov-2015 13:39:54] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/scotlap5/public_html/site/index.php on line 52
+[10-Nov-2015 13:39:54] PHP Parse error:  syntax error, unexpected T_STRING in /home3/scotlap5/public_html/site/index.php on line 52
