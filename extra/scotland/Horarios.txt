@@ -1,0 +1,112 @@
+Estimado de tiempos
+
+
+Planteo de tiempos en base a un framework en este caso Laravel (http://laravel.com/docs/5.0) por los siguientes motivos:
+                Los siguientes modulos ya estan creados en el framework
+                + Conexion con base de datos orientado a objetos y POO, creando modelos y automatizando funciones de crud (15+ hs)
+                + Rutas (6+ hs)
+                + Autenticacion de usuarios (8hs +)
+                + Encriptacion de contraseñas (3hs +)
+                + Envio de emails con templates (9hs +)
+                + Compatibilidad con composer (Servicio de repositorios con proyectos interezantes. Entre ellos lector de excel) (Inestimable, composer trae muchas ventajas)
+
+                Se mencionaron solo algunas de las necesidaes basicas y ya se puede apreciar una buena diferencia de tiempo.
+
+
+
+
+Administrador
+
+                CRUD = (Crear - Actualizar - Eliminar - Editar)
+
+                Crear entidad Aeroterrestre , Naviera y Barco
+                
+                + Se selecciona de antemano si es aeroterrestre comun. crucero, ski o clubmed
+                               - 2 hs
+                               - Crud (opcional 2 hs)
+
+                + Crear estrategia para base de datos relacional y posteriormente ejecutarla creando la base de datos 6hs
+                               [ Se evaluara de que manera es mejor relacionar las tablas unas con otras para optimizar la programacion y futuros desarrollos]
+
+                + Aeroterrestres - Cruceros (NAVIERA Y BARCO)
+                                               + NAVIERA Y BARCO 
+                                                               + Carga de naviera
+                                                                              - Nombre
+                                                                              - Logo
+                                                                              - Descripcion
+                                                               + Lista de los cargados, se puede modificar el orden
+                                                               + Carga de Barco
+                                                                              - Nombre
+                                                                              - Naviera
+                                                                              - Descripcion
+                                                                              - Galeria
+                                                                              + Info general del barco y ficha tecnica (Revisar en el admin)
+                                                               + Lista de los cargados, se puede modificar el orden
+                                               + AEROTERRESTRE
+                                                               + NOMBRE (titulo)
+                                                               + DESCRIPCION
+                                                               + DIAS
+                                                               + NOCHES
+                                                               + CADUCIDAD (FECHA DE EXPIRACION, CUANDO SE SUPERA DESAPARECE EL PAQUETE)
+                                                               + FECHA DE SALIDA (AGREGAR CANTIDAD DE FECHAS DE FORMA ILIMITADA)
+                                                               + CAMPO DE FECHA NO ESPECIFICO
+
+
+                               Programar campos comunes en base de datos 10hs (CRUD).
+                               Se tienen los datos basicos, a medida que se avance y se vea mas la complejidad el tiempo puede variar.
+
+                + Google maps api
+                               Consiste en la creacion de un modulo reutilizable en la aplicacion para obtener ubicaciones mediante el API
+                               4 hs
+                + Categorias 
+                               - CRUD 4hs
+                + CONVERTIBILIDAD
+                               - Creacion de tipos de moneda mas impuestos de forma ilimitada. 
+                                               - CRUD 4hs
+                + MODULO IMPORTADOR DE IMAGENES
+                               - Ante la necesidad constante de buscar imagenes de google, se plantea crear un modulo para poder buscar imagenes de google e importarlas directamente en la aplicacion para poder ser reutlizadas en un futuro. 6hs
+                               - El modulo tambien debe poder subir imagenes propias 3hs
+                + Itinerarios (Aeroterrestres)
+                               - Sera una vista en el cual se mostraran los dias previamente cargados a modo de contenedor para poder arrastras los destinos tambien previamente cargados hacia los dias. Los dias pueden contener una descripcion. 5hs
+                + Hoteles
+                               - Carga de hoteles a base de datos los cuales contienen [ Nombre , Descripción , Ubicacion(Modulo google maps) , Comodidades (texto), Imagenes de hotel (Modulo importador de imagenes) ]
+                                               - CRUD 6hs
+                               - Vigencia
+                                               - Periodos con precios en base a (BASE SINGLE, DOBLE, TRIPLE, CUADRUPLE Y MENORES)
+                                                               - CRUD 4hs
+                               - Regimen alimenticio
+                                               Seleccion regimen en base a opciones pre cargadas (2hs)
+
+                + Promociones
+                               - nombre (titulo)
+                               - seleccion de barco (Hay que cargarlos para tenerlos en los select)
+                               - Moneda
+                               - Cantidad de noches
+                               - Tipo de promocion (Transatlantico [Europa - Sudamerica | Sudamerica - Europa ] ,Minicrucero,Vuelta al mundo)
+                               - Publicar activado (Boolean)
+                               - Destinos (Google maps)
+                               - Descripcion
+                               - Carga de imagenes con api google
+
+                               - Promocion (id Promocion)
+                               - Numero de dia
+                               - Destinos Se toman de los previamente cargados
+                               - Arribo (Hora llegada)
+                               - Partida (Hora partida)
+                               - Fecha de salida
+                                               + tipo de camarote
+                                               + precio
+                                   + 2 x 1, promocion 2 por uno en los pasajes, se ingresan dos tarifas distintas
+
+
+                               - CRUD (6hs  minimo)
+
+                + NOTICIAS
+                               - tomar fecha automaticamente
+                               - publicar (activo/inactivo)
+                               - descripcion
+                               - api carga de imagenes
+
+                               + CRUD (4 HS)
+
+

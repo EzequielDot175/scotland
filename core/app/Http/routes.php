@@ -16,21 +16,69 @@ use App\User;
 
 Route::get('/', function(){
 
-	if (Auth::attempt(['email' => 'ezequiel@dot175.com', 'password' => '123']))
-	{
-	    // The user is active, not suspended, and exists.
-	    echo "logueado";
+	$array = array();
+	for ($i=0; $i < 100; $i++) { 
+		$array[$i] = "String_".$i;
 	}
+	
 
 });
 
-Route::get('other', function(){
-	var_dump(Auth::check());
+
+Route::group(['prefix' => 'admin'],function(){
+
+	/**
+	 * Administrador
+	 */
+	
+	Route::get('/','AdminController@index');
+
+	Route::group(['prefix' => 'crucero'],function(){
+
+		Route::get('/', 'CruceroController@index');
+
+	});
+
+	Route::group(['prefix' => 'aeroterrestre'],function(){
+		Route::get('/', 'AeroController@index');
+		/**
+		 * Paquetes
+		 */
+		Route::get('/paquetes', 'AeroController@paquetes');
+		Route::get('/paquetes/tipos', 'AeroController@paquetesTipos');
+		Route::get('/paquetes/new', 'AeroController@paquetesNew');
+		Route::get('/paquetes/incluye', 'AeroController@paquetesIncluye');
+
+		/**
+		 * Etiquetas
+		 */
+		Route::get('/etiquetas', 'AeroController@tags');
+		/**
+		 * Incluye
+		 */
+		Route::get('/incluye',  'AeroController@paquetesIncluye');
+		/**
+		 * Hoteles
+		 */
+		Route::get('/hoteles', 'AeroController@hoteles');
+		/**
+		 * Tipo de cambio (Divisas)
+		 */
+		Route::get('/divisas','AeroController@divisas');
+	});
+
 });
 
-// Route::get('home', 'HomeController@index');
 
-// Route::controllers([
-// 	'auth' => 'Auth\AuthController',
-// 	'password' => 'Auth\PasswordController',
-// ]);
+Route::group(['prefix' => 'ajax'],function(){
+	Route::post('hoteles', 'AjaxController@hoteles');
+	Route::post('images', 'AjaxController@images');
+	Route::post('paquetes', 'AjaxController@paquetes');
+	Route::post('tags', 'AjaxController@tags');
+	Route::post('divisas', 'AjaxController@divisas');
+	Route::post('impuestos', 'AjaxController@impuestos');
+	Route::post('promociones', 'AjaxController@promociones');
+	Route::post('incluye', 'AjaxController@incluye');
+	Route::post('comodidades', 'AjaxController@comodidades');
+});
+

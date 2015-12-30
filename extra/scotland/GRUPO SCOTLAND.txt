@@ -1,0 +1,52 @@
+GRUPO SCOTLAND
+
+AEROTERRESTRE
+	+ NOMBRE (titulo)
+	+ DESCRIPCION
+	+ DIAS
+	+ NOCHES
+	+ CADUCIDAD (FECHA DE EXPIRACION, CUANDO SE SUPERA DESAPARECE EL PAQUETE)
+	+ FECHA DE SALIDA (AGREGAR CANTIDAD DE FECHAS DE FORMA ILIMITADA)
+	+ CAMPO DE FECHA NO ESPECIFICO
+
+UBICACIONES
+	+ Usar API de Google para ubicaciones y tener una opcion manual para cargar, tiene que ser de seleccion multiple
+
+CATEGORIAS
+	+ Toda la dinamica sucede en una sola pantalla, En la parte superior van a aparecer las categorias cargadas, en el centro las disponibles, y en la parte inferior aparece un input para cargar la categoria
+
+CONVERTIBILIDAD
+	+ (JSON CONVERTIBILIDAD) 
+		+ Se puede agregar todo tipo de convertibilidad y editar, descripto en {"Nombre de convertibilidad" : "valor"}
+IMAGENES PAQUETE
+	+ LAS IMAGENES SE BUSCAN DESDE GOOGLE IMAGENES API, UNA VEZ DESCARGADAS AL SERVIDOR SE UTILIZA UN CROP DE IMAGEN.
+	+ MULTIPLE OPCION DE IMAGENES
+ITINERARIO
+	+ LISTA DE DIAS (DIVS), PARA HACER DRAG AND DROP DENTRO DE LOS MISMOS CON LAS CIUDADES QUE VAN A APARECER AL COSTADO. AL LADO DE CADA DIA VA A APARECER UN INPUT CON DESCRIPCION DEL DIA
+HOTELES
+	+ Carga de hoteles a la base de datos
+		+ Nombre
+		+ Descripcion
+		+ Ubicacion (Pais,Ciudad, Marcador Google Maps)
+	+ COMODIDADES DE HOTEL
+		+ Carga de comodidad con un input comun a la base de datos si falta la comodidad, multiple seleccion de comodidades.
+	+ IMAGEN DEL HOTEL
+		+ CARGA DE IMAGEN IGUAL A PAQUETE
+	+ VIGENCIA
+		+ PRECIO desde una fecha a otra con opciones (BASE SINGLE, DOBLE, TRIPLE, CUADRUPLE Y MENORES)
+REGIMEN ALIMENTICIO
+	+ Regimen
+	+ All Inclusive
+	+ Media Pensión
+	+ Pensión Completa
+	+ Otro
+	+ Con Desayuno
+	+ Sin Pensión
+	+ Según Hotel
+	+ Según Itinerario
+
+
+
+GENERAL
+	+ Se selecciona de antemano si es aeroterrestre comun. crucero, ski o clubmed
+

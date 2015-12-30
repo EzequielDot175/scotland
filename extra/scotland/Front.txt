@@ -1,0 +1,66 @@
+Home
+
+	+ Planteo en AngularJS
+		- Setear app
+		- Crear servicios de comunicacion entre app y aplicacion laravel
+		- Crear animaciones de transicion entre vistas (Para que pasar de una seccion a otra no sea seca)
+
+		4hs 
+
+
+	+ BUSCADOR
+		Buscador simple
+			+ 2hs
+		Buscador Cruceros
+			+ 3hs
+
+	Inicio Aeroterrestres
+		+ Mostrar Destacados 
+			- 2hs
+		+ Mostrar ultimas 3 promociones
+			- 2hs
+		+ Paquetes mas populares
+			- 2hs
+		+ Mostrar ultima novedad
+			- 2hs
+		+ Mostrar Destinos en orden del mas buscado
+			- 2hs
+		+ Mostrar Hoteles mas buscados
+			- 2hs
+
+	Inicio Cruceros
+		+ Mostrar Destacados 
+			- 2hs
+		+ Mostrar ultimas 3 promociones
+			- 2hs
+		+ Paquetes mas populares
+			- 2hs
+		+ Mostrar ultima novedad
+			- 2hs
+		+ Mostrar Destinos en orden del mas buscado
+			- 2hs
+		+ Mostrar Hoteles mas buscados
+			- 2hs
+
+	* DESTINOS
+		- Buscador de destinos (Gooogle Maps | Modulo creado para entonces) 1hs
+			- Envio de busqueda 
+				- Informacion del lugar (Informacion proveida por api Wikipedia) 2h
+				- Paquetes relacionados (Paquetes cargados desde la base de datos con el mismo pais) 1h
+				- Formulario consulta (Envio de email) 40 min
+
+
+		- Paquetes destacados 1.3 hs
+
+	+ Paquetes 
+		- Detalle del paquete
+			- Mostrar todos los datos del paquete (2hs)
+	+ Suscripcion a newsletter
+		- 1hs (envio de email y agregado a base de datos)
+
+
+Total actual
+	42 hs
+	Posible tiempo en consultas
+		4hs
+	Urgencias Se anotan aparte

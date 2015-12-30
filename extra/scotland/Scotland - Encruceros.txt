@@ -1,0 +1,63 @@
+CREATE TABLE IF NOT EXISTS `gruposc2_db_scot`.`categoria_paquetes` (
+  `id` SMALLINT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NULL,
+  `created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB+ PROMOCIONES
+	- nombre (titulo)
+	- seleccion de barco (Hay que cargarlos para tenerlos en los select)
+	- Moneda
+	- Cantidad de noches
+	- Tipo de promocion (Transatlantico [Europa - Sudamerica | Sudamerica - Europa ] ,Minicrucero,Vuelta al mundo)
+	- Publicar activado (Boolean)
+	- Destinos (Google maps)
+	- Descripcion
+	- Carga de imagenes con api google
+
+	- Promocion (id Promocion)
+	- Numero de dia
+	- Destinos Se toman de los previamente cargados
+	- Arribo (Hora llegada)
+	- Partida (Hora partida)
+	- Fecha de salida
+		+ tipo de camarote
+		+ precio
+	    + 2 x 1, promocion 2 por uno en los pasajes, se ingresan dos tarifas distintas
+
+	- CRUD
+
++ NOTICIAS
+	- tomar fecha automaticamente
+	- publicar (activo/inactivo)
+	- descripcion
+	- galeria de imagenes
+	- api carga de imagenes
+
+	+ Listado de noticias
+		- Editar, Borrar
+
+
++ NAVIERA Y BARCO 
+	+ Carga de naviera
+		- Nombre
+		- Logo
+		- Descripcion
+	+ Lista de los cargados, se puede modificar el orden
+	+ Carga de Barco
+		- Nombre
+		- Naviera
+		- Descripcion
+		- Galeria
+		+ Info general del barco y ficha tecnica (Revisar en el admin)
+	+ Lista de los cargados, se puede modificar el orden
+
+	+ CRUD para naviera y barco en la misma pantalla
+
+
+
+
++ FRONT
+	- (Index)Panel frontal con layouts definidos para seleccionar las promociones a mostrar 
+
+
