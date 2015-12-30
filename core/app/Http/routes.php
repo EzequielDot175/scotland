@@ -20,6 +20,10 @@ Route::get('/', function(){
 	for ($i=0; $i < 100; $i++) { 
 		$array[$i] = "String_".$i;
 	}
+
+	echo "<pre>";
+	print_r($array);
+	echo "</pre>";
 	
 
 });
